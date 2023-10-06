@@ -13,7 +13,8 @@ function handleMove(cell) {
   cell.textContent = currentPlayer;
   
   if (checkWin()) {
-    document.getElementById('status').textContent = `Player ${currentPlayer} wins!`;
+    document.getElementById('status').textContent = `Player ${currentPlayer} wins! 🎉`;
+    document.getElementById('status').style.color = 'green';
     gameActive = false;
     return;
   }
